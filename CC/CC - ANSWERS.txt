@@ -1,0 +1,85 @@
+1. Which mechanism are used in service load balancing architecture?
+2. What are the SECURITY CONSIDERATIONS in cloud?
+3. The primary technology innovations that influenced and inspired key distinguishing features and
+aspects of cloud computing include which forms of virtualization ?
+4. What concerns are associated with the usage of remote management software, which is employed for connecting to physical server consoles and deploying operating systems?
+5. What is an API Gateways? Why API's is used in cloud services?
+6. What is a Virtual Private Cloud (VPC) and why is it important?
+7. Which mechanisms is nosed to facilitate runtime data transformation so as to make a cloud service accessible to a wider range of cloud service consumer
+8. Write diferent types of Virtualization
+9. Describe integration of cloud storage providers.
+10. What utilization models does cloud computing, a specialized form of distributed computing, introduce for the remote provisioning of resources?
+11. What are the advantages of OS Virtualization?
+12. Which OS-based virtualization can introduce demands and issues related to performance overhead.
+13. What are the characteristics of a community cloud?
+14. What are the advantages of using Azure Content Delivery Network?
+15. What are system integrators in cloud computing?
+16. What are some of the popularly used cloud computing services?
+17. What are some of key features of cloud computing?
+18. What are some issues with cloud computing?
+20. What are different datacenters deployed for cloud computing?
+21. What are cloud storage levels?
+22. What are cloud enabling technologies?
+23. Mention in what ways cloud architecture provides automation and performance transparency?
+24. List out the limitations of Cloud Computing.
+25. How is cloud architecture involved in business benefits?
+26. How does cloud security works and what are the primary concerns?
+27. How does AWS provide security for its customers?
+28. Explain the security management regarding cloud computing.
+29. Explain the full form and usage of “EUCALYPTUS” in cloud computing?
+30. Explain hybrid and community cloud?
+31. Do public clouds owned third parties offers commercialized cloud services and IT resources to consumer organizations? Justify your answer.
+32. Define Virtual Machine.
+33. Which type of Scaling is illustrated in this figure? Justify your answer.
+
+
+
+
+
+
+
+
+
+34. Start-up A opts to deploy its web application on a cloud server whereas start-up B opts to deploy the application on its own infrastructure. Excluding other expenses, compare investment cost of both start-up with proper reasoning.
+35. What are the primary business drivers that exposed the need for cloud computing and led to its formation?
+36. Which one of the above scenario is a multitenant environment? And how does it work?
+
+
+
+
+
+37. Write the use of "pooling of physical resources".
+38. Mention various storage systems technologies used in cloud?
+39. DoS attack is to overload IT resources to the point where they cannot function properly. Write multiple ways of launching DoS attack.
+40. Which of mechanisms are used to collect (1) audit tracking data for networks, (2) IT resources in support of regulatory and (3) contractual obligations in cloud environment?
+41. Whatismean by migrating in cloud computing?
+42. What are the differences between Authentication and Authorization?
+43. What is a cloud VPN?
+44. What do you mean by cloud usage monitor?
+45. What do you mean by cloud delivery models?
+46. What are the security benefits of cloud computing?
+47. What are the different roles in AZURE?
+48. What are the different phases associated with cloud architecture?
+49. What kinds of responses to workload fluctuations can be offered by automated scaling listeners*
+50. In the provided diagram, three cloud service consumers are trying to access a single cloud service simultaneously. What mechanism is activated when 
+51. PaaS environments provide less administrative control than IaaS environments, but still offer a significant range of management features. Mention
+those features.
+52. What happens if the IP address or hostname of a data node changes?
+53. An in-house solution that a company named ATN did not migrate to the cloud is the Remote Upload Module; a program that is used by their clients to
+upload accounting and legal documents to a central archive on a daily basis. Usage peaks occur without warning since, the quantity of documents received on a day by-day basis is unpredictable. The Remote Upload Module currently rejects upload attempts when it is operating at capacity, which is problematic for users that need to archive certain documents before the end of a business day or prior to a deadline. ATN decides to take advantage of its cloud-based environment. Which Architecture would be suitable for this?
+54. Define threat AgentsP Explain their role in cloud security.
+55. Write a note on Hybrid cloud.
+56. Define SOA?
+57. What do you mean by systems of systems* Give examples.
+58. What is the usage of virtualization platform in implementing cloud?
+59. What is the EC2 (Elastic Compute Cloud) instance?
+61. What is the benefits of using system integrators in cloud computing?
+62. What is Microsoft Azure? Name the services offered by the Windows Azure operating system.
+63. What is AWS in cloud computing? Mention the key components of AWS.
+64. Define cloud computing and Identify the main features of cloud computing.
+65. Explain the major revolution introduced by web 2.0
+66. Explain the different types of models in the cloud computing
+67. Explain the three cloud services in cloud computing
+68. What is scaling in cloud computing? What are different types of scaling? explain in brief.
+69. Explain different boundaries defined in a cloud computing system?
+70. What is vendor lockin problem in CC, what are the risks associated with vendor lockin problem, what are the possible ways to avoid Vendor Lock In problem.

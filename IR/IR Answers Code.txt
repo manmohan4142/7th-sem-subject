@@ -1,0 +1,100 @@
+doc1 = "Breakthrough drug for Schizophrenia" 
+doc2 = "New Schizophrenia drug"
+doc3 = "New approach for treatment of Schizophrenia"
+doc4 = "New hopes for Schizophrenia patients"
+
+tokens = []
+
+for i in doc1.split():
+    tokens.append(i)
+for i in doc2.split():
+    tokens.append(i)
+for i in doc3.split():
+    tokens.append(i) 
+for i in doc4.split():
+    tokens.append(i)
+
+tokens = sorted(list(set(tokens)))
+mainList = [doc1, doc2, doc3, doc4]
+matrix = [[0 for i in range(len(mainList))] for j in range(len(tokens))]
+
+for i in range(len(tokens)):
+    for j in range(len(mainList)):
+        if tokens[i] in mainList[j]:
+            matrix[i][j] = 1
+
+x = 14
+
+for i in range(len(tokens)):
+    if len(tokens[i]) < x: 
+        for j in range(x-len(tokens[i])):
+            tokens[i] += " "
+
+for i in range(len(matrix)):
+    print(tokens[i], end= "")
+    for j in range(len(matrix[0])):
+        print(matrix[i][j], end = "")
+    print()
+    
+print("Presence of Terms in the documents :- ")
+
+inverted_index = {}  # Initialize the inverted index as an empty dictionary
+
+for doc_id, doc in enumerate(mainList):
+    terms = set(doc.split())  # Extract unique terms from the document
+    for term in terms:
+        if term not in inverted_index:
+            inverted_index[term] = []
+        inverted_index[term].append(doc_id)
+
+# Sort the inverted index by term for better readability
+sorted_inverted_index = {term: sorted(docs) for term, docs in inverted_index.items()}
+
+# Print the sorted inverted index
+for term, doc_ids in sorted_inverted_index.items():
+    print(f"{term}: {doc_ids}")
+    
+
+query_terms = ['BRUTUS', 'AND', 'CALPURNIA']
+
+# Initialize an empty result set
+result_set = set(range(len(mainList)))
+
+# Process the query terms
+for term in query_terms:
+    if term == 'AND':
+        continue  # Skip the AND operator
+    if term in inverted_index:
+        # Intersect the current result set with the documents containing the term
+        result_set = result_set.intersection(inverted_index[term])
+
+# Print the final result
+print("Documents containing 'BRUTUS AND CALPURNIA':", result_set)
+
+I1 = [8, 16, 19, 23, 25, 28, 43, 71, 81]
+I2 = [8, 41, 57, 60, 71]
+
+k = min(len(I1), len(I2))  # Set k to the minimum length of the two lists
+skip = int(k ** 0.5)  # Calculate the skip size
+
+result = []  # Initialize the result list
+
+i = j = 0  # Initialize pointers for both lists
+
+while i < len(I1) and j < len(I2):
+    if I1[i] == I2[j]:
+        result.append(I1[i])
+        i += 1
+        j += 1
+    elif I1[i] < I2[j]:
+        if (i + skip >= len(I1)) or (I1[i + skip] > I2[j]):
+            i += 1
+        else:
+            i += skip
+    else:
+        if (j + skip >= len(I2)) or (I2[j + skip] > I1[i]):
+            j += 1
+        else:
+            j += skip
+
+print("Intersection of I1 and I2 with skip pointers:", result)
